@@ -1,0 +1,50 @@
+package cfc;
+
+import java.util.Scanner;
+
+public class Cfc {
+
+    public static void main(String[] args) {
+        int x, y, z, a, b, c;
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Welcome to Chinese Fortune");
+        System.out.println("What is your birth year?");
+        x = in.nextInt();
+        y = 4;
+        z = x - y;
+        a = z / 12;
+        b = a * 12;
+        c = z - b;
+        System.out.println(c);
+        if (c == 0) {
+            System.out.print("Your zodiac animal is a Rat");
+        } else if (c == 1) {
+            System.out.print("Your zodiac animal is a Ox");
+        } else if (c == 2) {
+            System.out.print("Your zodiac animal is a Tiger");
+        } else if (c == 3) {
+            System.out.print("Your zodiac animal is a Rabbit");
+        } else if (c == 4) {
+            System.out.print("Your zodiac animal is a Dragon");
+        } else if (c == 5) {
+            System.out.print("Your zodiac animal is a Snake");
+        } else if (c == 6) {
+            System.out.print("Your zodiac animal is a Horse");
+        } else if (c == 7) {
+            System.out.print("Your zodiac animal is a Goat");
+        } else if (c == 8) {
+            System.out.print("Your zodiac animal is a Monkey");
+        } else if (c == 9) {
+            System.out.print("Your zodiac animal is a Rooster");
+        } else if (c == 10) {
+            System.out.print("Your zodiac animal is a Dog");
+        } else if (c == 11) {
+            System.out.print("Your zodiac animal is a Pig");
+        } else {
+            System.out.print("Error. Try again.");
+        }
+
+    }
+
+};
